@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place searches</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAuSXERtjKs2qgAaK6BJyb1T6LBb3fM40&sensor=true&libraries=weather,panoramio,places">
+    </script>
+
+  </head>
+  <body>
+  	<section class="searchZone">
+  		<input type="text" id="location-search"/>
+  	</section>
+    <div id="map-canvas"></div>
+
+    <section class="rightbox">
+    	<div class="input-options">
+    		<h3> SELECT OPTIONS</h3>
+        <label> Place our stores </label><input type="checkbox"  data-show="stores"><br/>
+    		<label> Color </label><input type="checkbox"  data-show="color"><br/>
+    		<label> Trafic </label><input type="checkbox"  data-show="trafic"><br/>
+    		<label> Weather </label><input type="checkbox"  data-show="weather"><br/>
+    		<label> Transit </label><input type="checkbox"  data-show="transit"><br/>
+    		<label> Photos </label><input type="checkbox"  data-show="photos"><br/>
+    		<label> Population </label><input type="checkbox"  data-show="population">
+    	</div>
+    </section>
+
+    <section class="clearfix" id="diaporama">
+        <iframe style="float: right; margin: 10px" src="http://www.panoramio.com/wapi/template/list.html?tag=mountain&amp;width=1000&amp;height=200&amp;rows=1&amp;columns=7&amp;orientation=horizontal" frameborder="0" width="1000" height="200" scrolling="no" marginwidth="0" marginheight="0"> </iframe>
+    </section>
+
+    <section class="clearfix" id="description_place">
+        <h2></h2>
+        <p></p>
+    </section>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

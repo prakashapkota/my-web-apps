@@ -1,0 +1,45 @@
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+html, body, #map-canvas {
+	height: 100%;
+	margin: 0px;
+	padding: 0px
+}
+
+#map-canvas {
+	height: 420px;
+	width: 1000px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+.searchZone{
+	margin: 20px;
+}
+.rightbox{
+	width: 350px;
+	float: right;
+}
+.rightbox .input-options label{
+	display: inline-block;
+	width: 150px;
+	margin-bottom: 10px;
+}
+section#description_place{
+	clear: both;
+}
+section#diaporama{
+	clear: both;
+	text-align: center;
+}
+section#diaporama iframe{
+	margin: 0 auto;
+	float: none!important;
+	height: 140px;
+}
