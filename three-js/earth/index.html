@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mon premier rendu 3D avec Three.js</title>
+    <meta charset="utf-8">
+    <link  href="css/main.css" rel="stylesheet"/>
+    <style type="text/css">
+    	html,body{
+    		overflow: hidden;
+    	}
+    </style>
+  </head>
+<body>
+    
+  <div id="container"></div>
+
+  <script src="http://mrdoob.github.com/three.js/build/three.min.js"></script>
+  <script type="text/javascript" src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
+  <script type="text/javascript">
+  	var renderer, scene, camera, mesh1, controls, light, projector;
+
+	init();
+	animate();
+	document.body.addEventListener( 'mousewheel', mousewheel, false );
+	document.body.addEventListener( 'DOMMouseScroll', mousewheel, false ); // firefox
+	//document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+
+	function init(){
+	    // on initialise le moteur de rendu
+	    renderer = new THREE.WebGLRenderer();
+
+	    // si WebGL ne fonctionne pas sur votre navigateur vous pouvez utiliser le moteur de rendu Canvas à la place
+	    // renderer = new THREE.CanvasRenderer();
+	    renderer.setSize( window.innerWidth, window.innerHeight );
+	    document.getElementById('container').appendChild(renderer.domElement);
+
+	    // on initialise la scène
+	    scene = new THREE.Scene();
+
+	    // on initialise la camera que l’on place ensuite sur la scène
+	    camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000 );
+	    camera.position.set(0, 0, 1000);
+	    scene.add(camera);
+	    
+	    // cube
+	    var globe = new THREE.SphereGeometry(100, 128, 128);
+	    var materialglobe = new THREE.MeshPhongMaterial();
+	    materialglobe = THREE.ImageUtils.loadTexture('earth.jpg');
+	    materialglobe.anisotropy = renderer.getMaxAnisotropy();
+		var materialglobeMesh = new THREE.MeshBasicMaterial( { map: materialglobe } );
+		mesh1 = new THREE.Mesh( globe, materialglobeMesh );
+
+		mesh1.position.x = 200;
+		mesh1.position.y = 20;
+		mesh1.position.z = 100;
+		scene.add( mesh1 );
+		
+		//Cylinder
+		var Cylinder = new THREE.CylinderGeometry( 0, 40, 120, 16, 4 );
+		var material2 =  new THREE.MeshLambertMaterial( { color:0xffffff, shading: THREE.FlatShading } );
+
+		for ( var i = 0; i < 4; i ++ ) {
+
+			var mesh2 = new THREE.Mesh( Cylinder, material2 );
+			mesh2.position.x = ( Math.random() - 0.5 ) * 1000;
+			mesh2.position.y = ( Math.random() - 0.5 ) * 1000;
+			mesh2.position.z = ( Math.random() - 0.5 ) * 1000;
+			mesh2.updateMatrix();
+			mesh2.matrixAutoUpdate = false;
+			scene.add( mesh2 );
+		}
+
+
+		//CUBE TEXTURE
+
+		var cube = new THREE.CubeGeometry( 200, 200, 200 );
+		var texturecube = THREE.ImageUtils.loadTexture( 'crate.gif' );
+		texturecube.anisotropy = renderer.getMaxAnisotropy();
+		var materialcube = new THREE.MeshBasicMaterial( { map: texturecube } );
+		var mesh3 = new THREE.Mesh( cube, materialcube );
+		scene.add( mesh3 );
+
+		//LIGHT
+		light = new THREE.DirectionalLight( 0xffffff );
+		light.position.set( 1, 1, 1 );
+		scene.add( light );
+
+		light = new THREE.DirectionalLight( 0x002288 );
+		light.position.set( -1, -1, -1 );
+		scene.add( light );
+
+		light = new THREE.AmbientLight( 0x222222 );
+		scene.add( light );
+
+		renderer.render( scene, camera );
+
+		controls = new THREE.OrbitControls( camera );
+		controls.addEventListener( 'change', render );
+
+		projector = new THREE.Projector(); 
+	}
+
+	function mousewheel( e ) {    
+		e.preventDefault();  
+	    var d = ((typeof e.wheelDelta != "undefined")?(-e.wheelDelta):e.detail);
+	    d = 100 * ((d>0)?1:-1);    
+
+		var cPos = camera.position;
+		if (isNaN(cPos.x) || isNaN(cPos.y) || isNaN(cPos.y)) return;
+
+		mb = d>0 ? 1.1 : 0.9 ;
+		cPos.x  = cPos.x * mb;
+		cPos.y  = cPos.y * mb;
+		cPos.z  = cPos.z * mb;
+		camera.position.set(cPos.x, cPos.y, cPos.z);
+		renderer.render( scene, camera );
+	}
+	function animate(){
+	    requestAnimationFrame( animate );
+	    mesh1.rotation.x += 0.01;
+	    mesh1.rotation.y += 0.02;
+	    renderer.render( scene, camera );
+	}
+	function render() {
+		renderer.render( scene, camera );
+	}
+  </script>
+</body>
+</html>
