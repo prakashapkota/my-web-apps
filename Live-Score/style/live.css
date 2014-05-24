@@ -1,0 +1,66 @@
+body { overflow:auto!important;
+	margin:0;padding:0;font-size:13px; font-family:Arial; text-align:center; overflow:hidden; overflow-x: hidden;}
+
+#loading{
+	position: absolute;
+	height:100%;
+	width:100%;
+	background: rgba(0, 0, 0, 0.6);
+	color:white;
+	text-align: center;
+
+}
+#top {background-image:url('../images/header_bckg.jpg'); background-position:top left; background-repeat : repeat-x;background-color: #718EE6;margin:auto;text-align:center;}
+
+#center{ margin:15px 0px; text-align:center;}
+
+.clear {clear:both;}
+#center .listeTeams {margin:auto;width:300px;}
+
+/*  List match  */
+#center .listeMatchs {margin:auto;}
+#center #listeMatchs h3 {background:#999;padding:5px}
+#center #listeMatchs table { width:100%; border-top: 1px solid #eaeaea; padding-top:3px; cursor:pointer; border-collapse:collapse; }
+#center #listeMatchs table tr:nth-child(2n) td {border-bottom:1px solid #eaeaea;}
+#center #listeMatchs td { height:20px; }
+#center #listeMatchs td span{ font-weight:bold;}
+#center #listeMatchs td.iconR{ background:url(../images/icon-arrow-r.png) no-repeat 50% 50%; border-bottom: 1px solid #eaeaea; } 
+#center #listeMatchs td span.date{ font-size:10px; color:#666;}
+#center #listMatchs .ui-page  {position:static;}
+.ui-mobile [data-role="page"], .ui-mobile [data-role="dialog"], .ui-page  {position:static;}
+.ui-body-c, .ui-overlay-c {background:none;}
+
+#newMatch{padding:0 2%;}
+#newMatch form{width:95%; overflow:auto;margin: 0 auto;}
+#newMatch form .left{float:left;margin-right: 1%;}
+#newMatch form .thirty5{width:35%;}
+#newMatch form .ten{width:16%;}
+#newMatch form .full{clear:both;width:100%;padding-top:20px;}
+#newMatch form input{border:none;padding: 1px 15px!important;}
+
+/* score  page de modification*/
+
+#center #modifyMatch table { width: 100%; margin-bottom:20px;}
+
+#center #modifyMatch table span{ font-weight:bold; font-size:20px;}
+
+#center #modifyMatch input.ui-input-text{ width:80px;display:inline;}
+
+
+/* test mobile   */
+.clear{ clear:both; margin-top:100px;}
+
+#center #listeMatchs, #center #modifyMatch { position:absolute; margin: 0px }
+#center #listeMatchs{ left:0; width:100% }
+#center #modifyMatch { left:100%; width:100%; }
+#center #modifyMatch .scoreReturn {width:100px; margin-left: 1%; font-size:12px;}
+#center #modifyMatch .scoreReturn .ui-btn-inner { padding: 0.2em 15px; border:none; width:90px;}
+#center #modifyMatch  form { width:95%; margin:auto;}
+#center, #center .listMatchs, #center #modifyMatch { overflow:hidden; }
+
+
+
+
+
+
+

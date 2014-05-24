@@ -14,17 +14,16 @@ html, body, #map-canvas {
 
 #map-canvas {
 	height: 420px;
-	width: 1000px;
+	width: 100%;
 	margin: 0px;
 	padding: 0px;
-	float: left;
+
 }
 .searchZone{
 	margin: 20px;
 }
 .rightbox{
-	width: 350px;
-	float: right;
+	width: 100%;
 }
 .rightbox .input-options label{
 	display: inline-block;
