@@ -1,0 +1,179 @@
+* { box-sizing: border-box; }
+
+body{
+	text-align: center;
+}
+.popin-bg-layer{
+	display: none;
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(0,0,0,0.5);
+	z-index: 9;
+}
+.wrapper{
+	width:90%;
+	border: 1px solid #ccc;
+	padding: 10px 15px;
+	margin: 0 auto;
+	text-align: left;
+	overflow: hidden;
+}
+
+.wrapper section.addForm, .wrapper section.callList{
+	width: 50%;
+	float: left;
+	padding:20px;
+}
+.wrapper section.addForm form{ 
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+.wrapper section.addForm form label{
+	display: inline-block;
+	float: left;
+	width: 150px;
+}
+.wrapper section.addForm form label.red{
+	color:red;
+}
+.wrapper section.addForm form input, .wrapper section.addForm form textarea {
+	clear: both;
+	display: inline-block;
+	width: 400px;
+	margin-bottom: 10px;
+}
+.wrapper section.callList{
+	overflow: auto;
+	overflow-x:none;
+}
+.wrapper section.callList article{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 20px 28px 20px;
+	position: relative;
+	background: #efefef;
+}
+.wrapper section.callList h3{
+	margin-top: 0;
+}
+.wrapper section.callList article h1{
+	font-size: 18px;
+}
+
+.wrapper section.callList article p label{
+	display: inline-block;
+	width: 90px;
+}
+.wrapper section.callList article .options{
+	width:100%;
+	position:absolute;
+	background:#ff0000;
+	height:30px;
+	padding: 8px;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+.wrapper section.callList article .options span{
+	margin-right: 20px;
+}
+.wrapper section.callList article .more{
+	display:block;
+	width: 20px;
+	height: 15px;
+	position: absolute;
+	top:8px;
+	right: 10px;
+}
+.wrapper section.callList article .more.on{
+	-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.wrapper section.callList article p.description{
+	display:none;
+}
+.wrapper .popin.details{
+	display: none;
+	position:absolute; 
+	top:100px;
+	width:600px;
+	left:50%;
+	margin: 0 0 0 -300px;
+	background: #fff;
+	z-index: 99;
+	padding: 20px 15px;
+	box-shadow: 0px 0px 33px #333;
+	
+}
+.wrapper .popin.details .inner{
+	max-height: 470px;
+	overflow: auto;
+}
+.wrapper .popin.details .close{
+	display: inline-block;
+	position: absolute;
+	top: 4px;
+	right: 6px;
+	width: 12px;
+	height: 12px;
+}
+.wrapper .popin.details h1{
+	font-size: 18px;
+}
+.wrapper .popin.details label{
+	display: inline-block;
+	width: 90px;
+}
+.wrapper .popin.details #commentList{
+	margin: 10px 0;
+}
+.wrapper .popin.details #commentList p{
+	background: #F76A6A;
+	padding: 8px 20px;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	margin-top: 10px;
+}
+.wrapper .popin.details textarea{
+	width: 450px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.wrapper {
+		border-left:1px solid #999;
+		border-right:1px solid #999;
+		width: 97%;
+	}
+	.wrapper section.addForm, .wrapper section.callList{
+		width:100%;
+		float: none;
+		padding:10px;
+	}
+	.wrapper section.addForm form label{
+		display:block;
+		width: auto;
+
+	}
+	.wrapper section.addForm form input, .wrapper section.addForm form textarea{
+		width: 236px;
+	}
+	.wrapper .popin.details{
+		width: 300px;
+		margin: 0;
+		left: 10px;
+	}
+	.wrapper .popin.details textarea{
+		width: 98%;
+	}
+
+}

@@ -1,0 +1,9 @@
+*{padding: 0; margin: 0;}
+body{ width:960px; margin: 100px auto 0;}
+
+#slider-nav{ display: none; margin-top: 40px;}
+#slider-nav button{padding:1em;cursor: pointer; margin-right: 1em; background: #eaeaea;}
+
+div.slider {width:inherit; height: 273px; overflow:scroll;}
+.slider ul{width:10000px;list-style:none;}
+.slider ul li{float:left; }
