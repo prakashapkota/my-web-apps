@@ -13,26 +13,24 @@
 
   </head>
   <body>
-  	<section class="searchZone">
-  		<input type="text" id="location-search"/>
-  	</section>
-    <div id="map-canvas"></div>
-
     <section class="rightbox">
-    	<div class="input-options">
-    		<h3> SELECT OPTIONS</h3>
-        <label> Place our stores </label><input type="checkbox"  data-show="stores"><br/>
-    		<label> Color </label><input type="checkbox"  data-show="color"><br/>
-    		<label> Trafic </label><input type="checkbox"  data-show="trafic"><br/>
-    		<label> Weather </label><input type="checkbox"  data-show="weather"><br/>
-    		<label> Transit </label><input type="checkbox"  data-show="transit"><br/>
-    		<label> Photos </label><input type="checkbox"  data-show="photos"><br/>
-    		<label> Population </label><input type="checkbox"  data-show="population">
-    	</div>
+        <div class="input-options">
+            <h3> SELECT OPTIONS</h3>
+            <input type="checkbox"  data-show="mountains"><label> highest mountains </label>
+            <input type="checkbox"  data-show="population"><label> Population </label>
+            <input type="checkbox"  data-show="color"><label> Color </label>
+            <input type="checkbox"  data-show="trafic"> <label> Trafic </label>
+            <input type="checkbox"  data-show="weather"><label> Weather </label>
+            <input type="checkbox"  data-show="transit"><label> Transit </label>
+            <input type="checkbox"  data-show="photos"><label> Photos </label>
+        </div>
     </section>
 
+  	<input type="text" id="location-search"/>
+    <div id="map-canvas"></div>
+
     <section class="clearfix" id="diaporama">
-        <iframe style="float: right; margin: 10px" src="http://www.panoramio.com/wapi/template/list.html?tag=mountain&amp;width=1000&amp;height=200&amp;rows=1&amp;columns=7&amp;orientation=horizontal" frameborder="0" width="1000" height="200" scrolling="no" marginwidth="0" marginheight="0"> </iframe>
+        
     </section>
 
     <section class="clearfix" id="description_place">

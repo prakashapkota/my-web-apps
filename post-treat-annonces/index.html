@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Traitement des annonces - Application web to organise call list</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-3.0.css" rel="stylesheet" media="screen">
+     <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="popin-bg-layer"></div>
+    <div class="wrapper">
+         <div class="page-header">
+            <h1>Traitement des annonces<small> Application web to organise call list</small></h1>
+        </div>
+
+        <section class="addForm">
+            <form id="additem">
+                <fieldset>
+                    <legend>Basic Info</legend>
+
+                    <label for="title">Title</label>
+                    <input type="text" id="title" class="input" placeholder="Title"/>
+
+                    <label for="number">Phone Number</label>
+                    <input type="text" id="number" class="input" placeholder="Phone Number"/>
+
+                    <label for="price">Prix</label>
+                    <input type="text" id="price" class="input" placeholder="Prix"/>
+
+                    <label for="city">Ville</label>
+                    <input type="text" id="city" class="input" placeholder="Ville"/>
+
+                    <label for="description">Description</label>
+                    <textarea id="description" class="input" placeholder="description"></textarea>
+                </fieldset>
+
+                <input type="submit" value="Ajouter" class="btn btn-default small"/>
+            </form>
+            <div id="log"></div>
+        </section>
+
+        <section class="callList" id="callList">
+                <div id="logCallList"></div>
+              <h3>Annonces</h3>
+        </section>
+
+        <section class="popin details" id="popin">
+            <span class="close"> X </span>
+            <div class="inner">
+                <div class="calldata-popin"></div>
+                <div id="commentList"></div>
+                <form id="commentForm">
+                    <h3> Comment </h3>
+                    <textarea value="" id="commentbox" placeholder="Commentaires"></textarea><br/><br/>
+                    <input type="submit" value="Post" class="btn btn-default"/>
+                </form>
+            </div>
+                <div id="logPopin"></div>
+        </section>
+    </div>
+
+    <script src="js/libs/jquery/jquery-1.10.js"></script>   
+    <script src="js/libs/bootstrap/bootstrap-3.min.js"></script>
+    <script src="js/libs/backbone/backbone.js"></script>
+    <script src="js/libs/underscore/underscore-min.js"></script>
+    <script src="js/main.js" ></script>
+
+  </body>
+</html>

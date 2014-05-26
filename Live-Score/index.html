@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>Live Score! </title>
+
+		<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+		<link rel="stylesheet" href="style/live.css" />
+
+		<script src="scripts/jquery-2.min.js"></script>	
+		<script src="scripts/jquery.mobile.min.js"></script>
+		<script type="text/javascript" src="scripts/liveScore.js"></script>
+
+	</head>
+	<body>
+		
+
+		<div id="top">
+			<a href="/">
+				<img alt="Live Score !" src="images/logo.png" style="width:260px; height:45px;" border="0" />
+			</a>
+		</div>
+		
+		<div id="center">
+			<div id="loading" style="display:none;">Loading contents</div>
+
+			
+			
+			<div id="listeMatchs">
+				<div id="newMatch">
+					<form action="" id="addMatch">
+						<div class="left thirty5">
+							<label>Localteam</label><input type="text" val="" id="newTeam1" placeholder="localteam"/>
+						</div>	
+						<div class="left thirty5">
+							<label>Exterieur team</label><input type="text" val="" id="newTeam2" placeholder="exterieurteam"/>
+						</div>
+						<div class="left ten">
+							<label>Date</label><input type="date" val="" id="matchDate"/>
+						</div>
+
+						<div class="full">
+							<input type="submit" value="ADD"/>
+						</div>	
+					</form>
+				</div>
+
+        		<div class="content">
+					<h3>Matchs</h3>
+					<table class="listeMatchs">
+					</table>
+				 </div>
+			</div> 
+			
+			<div id="modifyMatch">
+			<div id="prvwResult" data-role="button" data-theme="a" class="scoreReturn" data-icon="arrow-l" data-iconpos="left">Retour</div>	  				
+   			 	<div class="content">
+					<h3>Liste des matchs</h3>
+					<form method="post" id="editscore">  
+						<fieldset data-role="controlgroup">
+							<table>
+								<tr>
+									<td><span class="team1">Equipe1</span></td>
+									<td><span class="team2">Equipe2</span></td>
+								</tr>
+								<tr>
+									<td><input type="number" placeholder="Score" id="score1" name="score1"/><label></label></td>
+									<td><input type="number" placeholder="Score" id="score2" name="score2"/><label></label></td>
+								</tr><tr>
+									<td colspan="2" class="date">Mercredi, 12/11/2012</td>
+								</tr>
+							</table>
+							<input type="submit" data-theme="a" value="Test" />
+						</fieldset>
+					</form>
+				</div><!--content-->
+				
+				<div>
+						<a class="twitter-timeline" href="https://twitter.com/prakashapkota" data-widget-id="280753412117774336" width="900" height="500">Tweets de @prakashapkota</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+
+				
+       		</div> <!--listeScore-->
+		</div><!--center-->
+			<div class="clear"></div>		
+	</body>
+</html>
+
+

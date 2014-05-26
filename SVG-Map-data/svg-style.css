@@ -1,0 +1,18 @@
+        
+        
+path,polyline,polygon {  
+    fill: slategrey;  
+    stroke: black;  
+    stroke-width: 3;  
+    -webkit-transition: all 350ms;  
+}  
+path:hover,polyline:hover,polygon:hover {  
+    fill: green;  
+}  
+#Layer_5{
+	background: red;
+}
+
+#zone_1{
+    stroke: red;  
+}
