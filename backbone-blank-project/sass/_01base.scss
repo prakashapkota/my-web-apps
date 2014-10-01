@@ -1,0 +1,20 @@
+@import "compass";
+@import "compass/reset";
+
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+
+// mixin clearfix
+.clearfix {
+	@include clearfix;
+}
+
+// mixin position
+.position {
+	@include position(absolute, 0 0 0px 0px, true);
+}
+$wrapperHeight: 100%;
+
+$samsungRegular: 'Samsung InterFace', Calibri, Helvetica, Arial;
+$lucidaSansRegular: 'lucida_sansregular', Calibri, Helvetica, Arial;
+$SamsungInterFaceBold : 'SamsungInterFace-Bold', Calibri, Helvetica, Arial;

@@ -1,0 +1,222 @@
+/* Css 
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_01base\.scss}line{font-family:\000038}}
+.clearfix {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_01base\.scss}line{font-family:\0000313}}
+.position {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+@font-face {
+  font-family: "Samsung InterFace";
+  src: url("../fonts/556030274-SamsungIF_Rg.eot");
+  src: url("../fonts/556030274-SamsungIF_Rg.eot?#iefix") format("embedded-opentype"), url("../fonts/556030274-SamsungIF_Rg.svg#Samsung InterFace") format("svg"), url("../fonts/556030274-SamsungIF_Rg.woff") format("woff"), url("../fonts/556030274-SamsungIF_Rg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SamsungInterFace-Bold";
+  src: url("../fonts/SamsungInterFace-Bold.eot");
+  src: url("../fonts/SamsungInterFace-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SamsungInterFace-Bold.woff") format("woff"), url("../fonts/SamsungInterFace-Bold.ttf") format("truetype"), url("../fonts/SamsungInterFace-Bold.svg#SamsungInterFace-Bold") format("svg");
+}
+
+@font-face {
+  font-family: "lucida_sansregular";
+  src: url("../fonts/lucida-sansR.eot");
+  src: url("../fonts/lucida-sansR.eot?#iefix") format("embedded-opentype"), url("../fonts/lucida-sansR.woff") format("woff"), url("../fonts/lucida-sansR.ttf") format("truetype"), url("../fonts/lucida-sansR.svg#lucida_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pfsquaresanspro-light";
+  src: url("../fonts/pfsquaresanspro-light-webfont.eot");
+  src: url("../fonts/pfsquaresanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pfsquaresanspro-light-webfont.svg#helveticaneueltstd") format("svg"), url("../fonts/pfsquaresanspro-light-webfont.woff") format("woff"), url("../fonts/pfsquaresanspro-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pfsquaresanspro-regular";
+  src: url("../fonts/pfsquaresanspro-regular-webfont.eot");
+  src: url("../fonts/pfsquaresanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pfsquaresanspro-regular-webfont.svg#helveticaneueltstd") format("svg"), url("../fonts/pfsquaresanspro-regular-webfont.woff") format("woff"), url("../fonts/pfsquaresanspro-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\000032}}
+a {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\000035}}
+html, body {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\000038}}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  width: 100%;
+  min-height: 760px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000316}}
+#ctm-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000322}}
+#ctm-wrapper #nav {
+  width: 100%;
+  height: 60px;
+  background: #041016;
+  text-align: center;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000331}}
+#ctm-wrapper #nav .nav-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: left;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000336}}
+#ctm-wrapper #nav .nav-wrapper .ctm-logo {
+  padding: 11px 27px 0 27px;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000339}}
+#ctm-wrapper #nav .nav-wrapper .ctm-logo img {
+  width: 162px;
+  height: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000344}}
+#ctm-wrapper #nav .nav-wrapper ul {
+  display: inline-block;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000347}}
+#ctm-wrapper #nav .nav-wrapper ul li {
+  display: inline-block;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000352}}
+#ctm-wrapper #nav .nav-wrapper ul.ctm-menu li {
+  border-left: 1px solid #3d4244;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000354}}
+#ctm-wrapper #nav .nav-wrapper ul.ctm-menu li.last {
+  border-right: 1px solid #3d4244;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000357}}
+#ctm-wrapper #nav .nav-wrapper ul.ctm-menu li.active {
+  background: #0b528e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000360}}
+#ctm-wrapper #nav .nav-wrapper ul.ctm-menu li:hover {
+  background: #0b528e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000364}}
+#ctm-wrapper #nav .nav-wrapper ul.ctm-menu li.off:hover {
+  background: #272a2b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000368}}
+#ctm-wrapper #nav .nav-wrapper ul.ctm-menu li a {
+  display: inline-block;
+  color: #fff;
+  padding: 0 26px;
+  font-size: 1em;
+  line-height: 60px;
+  font-family: "Samsung InterFace", Calibri, Helvetica, Arial;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/prakashapkota\/Sites\/0WEBSITES\/backbone-marcel\/sass\/_03layout\.scss}line{font-family:\0000384}}
+#ctm-wrapper #page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  text-align: center;
+}
