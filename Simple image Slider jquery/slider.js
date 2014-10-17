@@ -8,6 +8,7 @@
 
 	$('#slider-nav').show().find('button').on('click', function(){
 
+
 		var direction = $(this).data('dir'),
 			loc=imgWidth;
 
@@ -30,6 +31,8 @@
 		if(direction && loc != 0){
 			unit=(direction=='next')? '-=' : '+=';
 		}
+		console.log(container);
+		
 		container.animate({
 			'margin-left':unit? (unit+loc) : loc
 		});

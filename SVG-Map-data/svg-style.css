@@ -9,10 +9,3 @@ path,polyline,polygon {
 path:hover,polyline:hover,polygon:hover {  
     fill: green;  
 }  
-#Layer_5{
-	background: red;
-}
-
-#zone_1{
-    stroke: red;  
-}
