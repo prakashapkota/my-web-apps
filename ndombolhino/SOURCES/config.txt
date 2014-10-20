@@ -1,0 +1,6 @@
+NOM DE LA BASE : db_ndombolhino
+
+wp-config : 
+
+ username: ndombolhino
+ password : ndombolhinoA1
