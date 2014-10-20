@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<script src="app.js"></script>
+</head>
+<body ng-controller="StoreController as store">
+
+	<section ng-init="tab = 1">
+		<ul class="nav nav-pills">
+			<li ng-class="{ active:tab === 1 }"> 
+				<a href ng-click="tab = 1"> DEScription</a> 
+			</li>
+			<li ng-class="{ active:tab === 2 }"> 
+				<a href ng-click="tab = 2"> DEScription</a> 
+			</li>
+			<li ng-class="{ active:tab === 3 }"> 
+				<a href ng-click="tab = 3"> DEScription</a> 
+			</li>
+		</ul>
+		<div class="panel" ng-show="tab == 1">
+			<h4> 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit </h4>
+			<blockquote>
+			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 	tempor incididunt ut labore
+			 </blockquote> 
+		</div>
+		<div class="panel" ng-show="tab == 2">
+			<h4> 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit </h4>
+			<blockquote>
+			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 	tempor incididunt ut labore
+			 </blockquote> 
+		</div>
+		<div class="panel" ng-show="tab == 3">
+			<h4> 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit </h4>
+			<blockquote>
+			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 	tempor incididunt ut labore
+			 </blockquote> 
+		</div>
+
+	</section>
+
+</body>
+</html>		

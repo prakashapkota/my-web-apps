@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Page Preloading Effect | Demo 2</title>
+		<meta name="description" content="Page Preloading Effect: Re-creating the effect seen on fontface.ninja" />
+		<meta name="keywords" content="page loading, effect, initial, logo, sliding, web design, css animation, transform" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/effect2.css" />
+		<link rel="stylesheet" type="text/css" href="css/bg-effect.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="demo-2">
+		
+		<div class="box-list-demos">
+            <span class="nav-demo nav-prev" data-operator="-"></span>
+            <span class="nav-demo nav-next" data-operator="+"></span>
+        </div>
+
+		<div id="ip-container" class="ip-container">
+			<!-- initial header -->
+			<header class="ip-header">
+				<h1 class="ip-logo">
+					<img src="http://prakashapkota.fr/images/logo.png" alt="">
+				</h1>
+				<div class="ip-loader">
+					<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+						<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+						<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+					</svg>
+				</div>
+			</header>
+			
+
+			<!-- main content -->
+			<section class="main-slide main-slide1">
+				<div id="background-1">
+				  	<canvas id="demo-canvas" width= "2000" height="1333"> </canvas>
+				</div>
+				<div class="innerContent">
+
+					<h2>Make yourself at home.</h2>
+					<div class="browser clearfix">
+						<div class="box">
+							<span class="icon-bell"></span>
+							<p>Do Re Mi What Fa Si Ti Doi Nemo Do Re Mi What Fa Si Ti Doi Nemo</p>
+						</div>
+						<div class="box">
+							<span class="icon-heart"></span>
+							<p>E La Yo Na Ti Do Pa Pa Noah Do Re Mi What Fa Si Ti Doi Nemo</p>
+						</div>
+						<div class="box">
+							<span class="icon-cog"></span>
+							<p>No way! Hey Hey, me ok! Do Re Mi What Fa Si Ti Doi Nemo</p>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+
+			<!-- related demos -->
+			<section class="main-slide main-slide1">
+				<p>If you enjoyed this demo you might also like:</p>
+				<a href="http://tympanus.net/Development/HeaderEffects/">
+					<img src="img/relatedposts/HeaderEffects.jpg" alt="Header Effects"/>
+					<h3>On-Scroll Header Effects</h3>
+				</a>
+				<a href="http://tympanus.net/Development/ArticleIntroEffects/">
+					<img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
+					<h3>Article Intro Effects</h3>
+				</a>
+			</section>
+			<section class="main-slide main-slide1">
+				<p>If you enjoyed this demo you might also like:</p>
+				
+			</section>
+
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/pathLoader.js"></script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/bg-effects.js"></script>
+	</body>
+</html>

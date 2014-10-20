@@ -34,3 +34,7 @@ html, body{
 	 top: 10px;
 	 cursor: pointer;
 }
+object{
+	width: 800px;
+height: 500px;
+}
