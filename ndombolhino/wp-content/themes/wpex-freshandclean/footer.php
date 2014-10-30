@@ -37,6 +37,13 @@
 				<?php
 				// Botom footer hook
 				wpex_hook_footer_bottom(); ?>
+
+				
+				<div class="ps_pubArea">
+					<?php if(dynamic_sidebar('ps_new_widget_pub_footer')) :else : endif; ?>
+				</div>
+				
+
 			</div><!-- /footer-wrap -->
 		<?php
 		// After footer hook
@@ -44,6 +51,9 @@
 	
 	<?php } ?>
 </div><!-- #wrap -->
+
+
+
 
 <?php
 // Show footer copyright if enabled in the admin

@@ -73,6 +73,7 @@
 			// Bottom header hook
 			wpex_hook_header_bottom(); ?>
 		</div><!-- /header-wrap -->
+
 		<?php
 		// After header hook
 		wpex_hook_header_after(); ?>
@@ -94,4 +95,10 @@
 			<?php }
 		} ?>
 		
+		<!-- prakashapkota -->
+			<div class="ps_pubArea">
+				<?php if(dynamic_sidebar('ps_new_widget_pub_header')) :else : endif; ?>
+			</div>
+		<!-- end prakashapkota -->
+
 		<div id="main-content" class="row span_12 clr">

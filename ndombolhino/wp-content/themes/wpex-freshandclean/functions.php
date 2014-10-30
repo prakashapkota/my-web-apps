@@ -144,3 +144,34 @@ class WPEX_Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		Walker_Nav_Menu::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
 	}
 }
+
+/* start PRAKASHAPKOTA*/ 
+
+function PS_new_widget_pub(){
+	wp_enqueue_style('extra css', get_template_directory_uri() . '/css/new-widget-pub.css' );
+} 
+add_action( 'wp_enqueue_scripts', 'PS_new_widget_pub');
+
+function PS_new_widget_pub_init(){
+	register_sidebar( array(
+		'name' => 'PS widget pub header',
+		'id' => 'ps_new_widget_pub_header',
+		'before_widget' => '<aside>',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>'
+	));
+	register_sidebar( array(
+		'name' => 'PS widget pub footer',
+		'id' => 'ps_new_widget_pub_footer',
+		'before_widget' => '<aside>',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>'
+	));
+}
+
+
+add_action( 'widgets_init', 'PS_new_widget_pub_init');
+
+/* end PRAKASHAPKOTA*/ 

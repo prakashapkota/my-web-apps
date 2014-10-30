@@ -148,5 +148,44 @@ h1, h2, h3, h4, h5, h6 {
 	height: 30px;
 }
 .span_4 h4, .span_4 h6{
-	background: red;
+	background: url(/wp-content/uploads/2014/10/main-menu-bg.jpg) repeat;
+	text-align: center;
+	padding-top: 6px;
+	border-radius: 10px 10px 0 0;
+	border-bottom: none;
+	height: 30px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	margin-bottom: 0!important;
+}
+div.wrap-MI{
+	padding: 0!important;
+}
+div.MIsliderVolume{
+	right: auto!important;
+	top: 79px!important;
+	left: 5px;
+}
+div.playlist-toggle-MI{
+	display: none;
+}
+div.MIsliderVolume .ui-widget-header {
+	background: #666;
+}
+div.MIsliderVolume{
+	background: #999!important;
+}
+.pluginSkinDark, .pluginSkinDark .fcb {
+	background: #333!important;
+}
+#footer {
+	padding: 5px 30px;
+}
+#footer-wrap{
+	background: transparent;
+}
+.footer-widget {
+	margin-bottom: 0; 
 }
