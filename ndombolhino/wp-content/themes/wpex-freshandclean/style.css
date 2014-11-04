@@ -107,11 +107,12 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 }
 #live-stream-widget{
-	height: 400px;
+	height: auto;
 	position: relative;
+	padding-bottom: 60px;
 }
 #live-stream-widget .playerWrapper{
-	height: 300px;
+	height: auto;
 }
 
 #live-stream-widget .player{
@@ -122,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #live-stream-widget .tv-list{
 	position: absolute;
-	height: 90px;
+	height: auto;
 	width: 100%;
 	bottom: 0;
 	left: 0;
@@ -189,3 +190,34 @@ div.MIsliderVolume{
 .footer-widget {
 	margin-bottom: 0; 
 }
+.textwidget{
+	border-right: 1px solid #fff000;
+	border-bottom: 1px solid #fff000;
+	border-left: 1px solid #fff000;
+}
+
+#footer-widgets .footer-box:nth-child(2){
+	height: 328px;
+	background: #fff;
+	position: relative;
+	border-radius: 11px 11px 0 0;
+}
+
+#footer-widgets .widget_weptile-image-slider-widget::after{
+	content: 'Découvrez plus de Videos';
+	position: absolute;
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	background: #fff000;
+	color: #333;
+	font-size: 14px;
+	top: 20px;
+	left: 50%;
+	margin-left: -100px;
+}
+
+
+
+
+
