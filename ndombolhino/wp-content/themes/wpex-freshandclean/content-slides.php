@@ -59,6 +59,10 @@ if ( class_exists( 'Symple_Slides_Post_Type' ) ) {
                     <?php endforeach; wp_reset_postdata(); ?>
                 </ul><!-- /slides -->
             </div><!-- /home-slider -->
+            <div id="home-video-slider">
+                <?php if(dynamic_sidebar('ps_home_slider_right')) :else : endif; ?>
+
+            </div>
         </div><!-- /home-slider-wrap -->
 	<?php } 
 } ?>

@@ -169,6 +169,15 @@ function PS_new_widget_pub_init(){
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>'
 	));
+
+	register_sidebar( array(
+		'name' => 'home sliders right',
+		'id' => 'ps_home_slider_right',
+		'before_widget' => '<aside>',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>'
+	));
 }
 
 

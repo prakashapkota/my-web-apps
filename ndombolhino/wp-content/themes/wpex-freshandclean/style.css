@@ -203,21 +203,39 @@ div.MIsliderVolume{
 	border-radius: 11px 11px 0 0;
 }
 
-#footer-widgets .widget_weptile-image-slider-widget::after{
-	content: 'Découvrez plus de Videos';
+#footer-widgets .widget_weptile-image-slider-widget .slider-wrapper:after{
+	content: 'Découvrez plus de vidéos';
 	position: absolute;
-	width: 200px;
+	width: 286px;
 	height: 30px;
-	border-radius: 10px;
-	background: #fff000;
-	color: #333;
-	font-size: 14px;
-	top: 20px;
-	left: 50%;
-	margin-left: -100px;
+	background: #9D6C04;
+	border-radius: 8px;
+	text-align: center;
+	padding-top: 7px;
+	font-size: 16px;
+}
+article iframe{
+	max-width: 100%;
 }
 
+#home-slider{
+	width: 720px;
+	float: left;	
+}
 
+#home-video-slider{
+	width: 270px;
+	float: left;
+	margin-left: 20px;
+
+}
+
+.FA_overall_container_classic_responsive .FA_featured_articles .FA_article .FA_wrap {
+	padding: 15px 15px 0px!important;
+}
+.FA_overall_container_classic_responsive .FA_featured_articles .FA_article{
+	height: 187px!important;
+}
 
 
 
